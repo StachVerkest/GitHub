@@ -32,12 +32,5 @@ namespace GitHub
         {
             LblHello.Content = "Hello World";
         }
-
-        private void BtnPlus_Click(object sender, RoutedEventArgs e)
-        {
-
-            iCount = iCount + 1;
-            LblCount.Content=iCount;
-        }
     }
 }
