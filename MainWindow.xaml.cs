@@ -20,14 +20,24 @@ namespace GitHub
     /// </summary>
     public partial class MainWindow : Window
     {
+        int iCount = 0;
+
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void BtnButton_Click(object sender, RoutedEventArgs e)
         {
             LblHello.Content = "Hello World";
+        }
+
+        private void BtnPlus_Click(object sender, RoutedEventArgs e)
+        {
+
+            iCount = iCount + 1;
+            LblCount.Content=iCount;
         }
     }
 }
